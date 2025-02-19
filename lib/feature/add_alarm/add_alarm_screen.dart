@@ -53,25 +53,23 @@ class _AddAlarmScreenState extends State<AddAlarmScreen> {
   }
 }
 
-
-  Weekday getWeekday(DateTime dateTime) {
-    switch (dateTime.weekday) {
-      case 1:
-        return Weekday.Mon;
-      case 2:
-        return Weekday.Tue;
-      case 3:
-        return Weekday.Wed;
-      case 4:
-        return Weekday.Thu;
-      case 5:
-        return Weekday.Fri;
-      case 6:
-        return Weekday.Sat;
-      case 7:
-        return Weekday.Sun;
-      default:
-        return Weekday.Mon;
-    }
+Weekday getWeekday(DateTime dateTime) {
+  switch (dateTime.weekday) {
+    case 1:
+      return Weekday.Mon;
+    case 2:
+      return Weekday.Tue;
+    case 3:
+      return Weekday.Wed;
+    case 4:
+      return Weekday.Thu;
+    case 5:
+      return Weekday.Fri;
+    case 6:
+      return Weekday.Sat;
+    case 7:
+      return Weekday.Sun;
+    default:
+      return Weekday.Mon;
   }
 }

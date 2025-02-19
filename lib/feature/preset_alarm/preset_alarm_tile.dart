@@ -112,6 +112,9 @@ class _PresetAlarmTileState extends State<PresetAlarmTile>
               PresetAlarmRemoveIcon(
                 sizeUpAnimation: _sizeUpAnimation,
                 isEditMode: widget.isEditMode,
+                onRemove: () {
+                  widget.onRemove(widget.index);
+                },
               ),
 
               // 시간 표시

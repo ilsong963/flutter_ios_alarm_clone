@@ -5,10 +5,12 @@ class PresetAlarmRemoveIcon extends StatelessWidget {
     super.key,
     required Animation<double> sizeUpAnimation,
     required this.isEditMode,
+    required this.onRemove,
   }) : _sizeUpAnimation = sizeUpAnimation;
 
   final Animation<double> _sizeUpAnimation;
   final bool isEditMode;
+  final Function onRemove;
 
   @override
   Widget build(BuildContext context) {
@@ -24,10 +26,14 @@ class PresetAlarmRemoveIcon extends StatelessWidget {
         );
       },
       child: isEditMode
-          ? Padding(
-              padding: const EdgeInsets.only(right: 10),
-              child: const Icon(Icons.block,
-                  color: Colors.red, key: ValueKey('edit_icon')))
+          ? GestureDetector(
+              onTap: () {
+                onRemove();
+              },
+              child: Padding(
+                  padding: const EdgeInsets.only(right: 10),
+                  child: const Icon(Icons.block,
+                      color: Colors.red, key: ValueKey('edit_icon'))))
           : const SizedBox.shrink(),
     );
   }
