@@ -6,4 +6,7 @@
 - 로컬 데이터 저장
 
 
-  ![AndroidEmulator-Medium_Phone_API_35_55562025-02-1917-24-50-ezgif com-video-to-gif-converter (2)](https://github.com/user-attachments/assets/4c91e661-838d-422e-ab95-5b85ea93cb0a)
+
+
+https://github.com/user-attachments/assets/369e706a-1a14-4db2-9913-6430d0ac7aaa
+
